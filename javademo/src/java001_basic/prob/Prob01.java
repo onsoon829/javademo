@@ -12,7 +12,7 @@ public class Prob01 {
 		int num = 10;
 		int res;
 		
-		//여기에 작성하세요.    
+		(num % 10 == 0) ? 0 : 1;   
 		
 	}
 
