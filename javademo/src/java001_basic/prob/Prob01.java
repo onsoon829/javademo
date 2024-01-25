@@ -12,8 +12,15 @@ public class Prob01 {
 		int num = 10;
 		int res;
 		
-		(num % 10 == 0) ? 0 : 1;   
+		if(num % 10 == 0) {
+			System.out.println("res="+1);
+			
+		}else {
+			System.out.println("res="+0);
+		}   
 		
-	}
+		res =(num % 10 ==0) ? 1: 0;
+		System.out.println("res="+ res);
+	}//end main
 
-}
+}// end class

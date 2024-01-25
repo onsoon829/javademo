@@ -12,6 +12,7 @@ public class Prob03 {
 
 	public static void main(String[] args) {
 	  //여기에 구현하세요.		
+     //totalapple = 123;
      
 		
       
