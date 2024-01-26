@@ -12,7 +12,12 @@ public class Prob_01 {
 		int[] num = { 94, 85, 95, 88, 90 };
 		
 		//여기를 구현하세요.
-
+        for(int i = 0; i < num.length; i++) {
+            if(i == 2) {
+        	System.out.printf("최대값: %d", num[i]);
+            }
+        }
+        
 	}// end main()
 
 }// end class

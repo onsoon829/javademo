@@ -28,16 +28,16 @@ public class Java047_array {
 //		System.out.printf("%.1fn", avg);
 		
 		for(int row=0; row<jumsu.length; row++) {
-			System.out.printf("%st",name[row]);
+			System.out.printf("%s\n",name[row]);
 			 sum = 0;
 			
 			for(int col=0; col <jumsu[row].length; col++) {
 				sum = sum + jumsu[row][col];
 				System.out.printf("%d\t", jumsu[row][col]);
 			}
-			System.out.printf("%d\t", sum);
-			avg = (double) sum / jumsu[row].length;
-			System.out.printf("%.1f", avg);
+//			System.out.printf("%d\t", sum);
+//			avg = (double) sum / jumsu[row].length;
+//			System.out.printf("%.1f\n", avg);
 		}
 	}//end main
 

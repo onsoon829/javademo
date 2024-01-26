@@ -23,6 +23,7 @@ public class java042_array {
 		
 		System.out.printf("홀수:%d\n", odd);
 		System.out.printf("짝수:%d\n", even);
+	    
 		//* 익숙하지 않은 양반들은 그림 그려가면서 코드 진행을 해보자.
 		//* 해보고 분석완료했으면 지우고 다시 해보자.
 

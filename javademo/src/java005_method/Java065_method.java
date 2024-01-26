@@ -16,7 +16,7 @@ public class Java065_method {
 		System.out.printf("%s\n", data);//[C@36baf30c
 		
 		int[] num = {1,2,3};
-		System.out.println(num);
+		System.out.println(num); // [I@77459877
 		
 	}//end main()
 

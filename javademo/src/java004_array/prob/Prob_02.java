@@ -15,7 +15,11 @@ public class Prob_02 {
 		int cnt = 1;
 		
 		// 여기를 구현하시오.
-		
+		for(int row = 0; row < data.length; row++) {
+			for(int col = 0; col < data[row].length; col++) {
+				
+			}
+		}
 	}// end main()
 
 }// end class
