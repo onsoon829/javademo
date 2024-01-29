@@ -1,0 +1,1 @@
+package java008_static_access.part06;
