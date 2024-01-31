@@ -19,7 +19,7 @@ public class Java078_class {
 		is[2] = new Insurance("b001", "손해보험", "화재보험", 15000);
 		is[3] = new Insurance("b002", "손해보험", "해상보험", 25000);
 
-		String search = "손해보험";
+		String search = "자동차보험";
 
 		int sum = process(is, search);
 		totalPrice(sum, search);
