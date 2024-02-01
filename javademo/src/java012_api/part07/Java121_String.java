@@ -29,18 +29,18 @@ public class Java121_String {
         
         int x = 10;
         int y = 20;
-        System.out.printf("x=%d, y=%d\n", x, y);
-        
-        String s1 = String.valueOf(x);//모든 자료형의 값 string으로 리턴할 수 있다.
-        String s2 = String.valueOf(y);
-        System.out.println(s1+s2);//-> 1020
-        
-        char[]data = {'1','2','3','4','5'};
-        String s3 = String.valueOf(data);//data 값 가져와라.
-        System.out.println(s3);
-        
-        String s4 = String.valueOf(data, 1, 3);// data의 1인데스부터 3까지 가져와라.
-        System.out.println(s4);
+//        System.out.printf("x=%d, y=%d\n", x, y);
+//        
+//        String s1 = String.valueOf(x);//모든 자료형의 값 string으로 리턴할 수 있다.
+//        String s2 = String.valueOf(y);
+//        System.out.println(s1+s2);//-> 1020
+//        
+//        char[]data = {'1','2','3','4','5'};
+//        String s3 = String.valueOf(data);//data 값 가져와라.
+//        System.out.println(s3);
+//        
+//        String s4 = String.valueOf(data, 1, 3);// data의 1인데스부터 3까지 가져와라.
+//        System.out.println(s4);
         
 	}//end main
 

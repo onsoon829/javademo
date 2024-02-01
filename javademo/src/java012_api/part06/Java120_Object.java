@@ -16,7 +16,7 @@ public class Java120_Object {
 			copy[i] = copy[i].clone();
 			System.out.println(copy[i]);
 		}
-		
+		// copy는 복사, clone은 복사 붙여넣기 ㄷㄷㄷㄷㄷㄷㄷㄷ
 		rect[0] = new Rect(2,6);
 		System.out.println(Arrays.toString(rect));//주소 출력
 		for(Rect r : rect)

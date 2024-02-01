@@ -22,7 +22,7 @@ public class Java126_String {
 		//System.out.println(data[0]);
 		//System.out.println(data[1]);
 		char gen = data[1].charAt(7);
-		if(gen == '1' || gen == '3');{
+		if(gen == '1' || gen == '3'){
 		   System.out.printf("%s님은 남성입니다.\n", data[0]);
 		   
 		}else if(gen=='2' || gen == '4') {
