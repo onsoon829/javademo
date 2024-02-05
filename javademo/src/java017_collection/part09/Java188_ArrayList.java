@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.Vector;
 
 //Enumeration은 Vector와 Hashtable에서만 제공이 되는 인터페이스이다.
-public class Java187_ArrayList {
+public class Java188_ArrayList {
 
 	public static void main(String[] args) {
 		Vector<Integer> v = new Vector<Integer>();
