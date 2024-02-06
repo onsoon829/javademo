@@ -9,7 +9,7 @@ import java.util.LinkedList;
  *  3. List을 구현해놓은 컬렉션
  *     Vector, ArrayList, LinkedList은 add() 해준 순서대로 데이터 관리를 해준다.                         
  */
-public class Java188_LinkedList {
+public class Java189_LinkedList {
 
 	public static void main(String[] args) {
 	     LinkedList<String> aList = new LinkedList<String>();
