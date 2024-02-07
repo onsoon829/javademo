@@ -13,7 +13,8 @@ public class Product{
 	
 	public Product() {
 		this("b001", "식품", 2000);
-		System.out.println("인자값이 없는 생성자");
+		System.out.println("인자값이 없는 "
+				+ "생성자");
 	}
 	
 	public Product(String code, String pname, int cnt) { //4

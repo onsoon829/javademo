@@ -16,7 +16,7 @@ public class Prob02_class {
 		Book bible = new Book("Bible");
 		Book emptyBook = new Book();
 		/////////여기에 구현하세요.
-		
+		bible.show();
 		/////////////////////////////////////
 
 	}//end main( )
