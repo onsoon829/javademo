@@ -10,6 +10,7 @@ public class Java213_thread {
 		
 		try {
 			//cc작업스레드가 종료될때까지 main스레드는 대기하고 있다.
+			//join: 변수 thread가 작업종료될 때까지 다른 작업 수행 안하게 하는 기능
 			cc.join(); 
 		} catch (InterruptedException e) {
 			e.printStackTrace();
