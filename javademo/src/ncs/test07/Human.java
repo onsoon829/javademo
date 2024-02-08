@@ -50,4 +50,5 @@ public void setweight(int weight) {
 	this.weight = weight;
 }
 
+//override, string format 사용 가능
 }

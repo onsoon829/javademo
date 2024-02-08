@@ -33,4 +33,5 @@ public class PlaneTest {
 	        System.out.println(airplane.getPlanename() + " " + airplane.getfuelSize());
 	        System.out.println(cargoplane.getplaneName() + " " + cargoplane.getfuelSize());
 	    }
+	//추상클래스 사용
 	}

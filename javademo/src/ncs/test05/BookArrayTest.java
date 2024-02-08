@@ -16,7 +16,7 @@ public class BookArrayTest {
 		for(int i = 0; i < bArray.length; i++) {
 			System.out.println(bArray[i].toString());
 		}
-		
+//개선된 for문 사용		
 		
 	}
        

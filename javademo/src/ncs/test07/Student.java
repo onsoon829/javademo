@@ -32,7 +32,10 @@ public class Student extends Human{
     
     @Override
     public String toString() {
-    	 return String.format("%s %d %d %d %s %s", getname(), getage(), getheight(), getweight(), getNumber(), getMajor());
+    	 
+    	
+    	return String.format("%s %d %d %d %s %s", getname(), getage(), getheight(), getweight(), getNumber(), getMajor());
+    	 //return String.format("%s %10s %10s", super.toString(), number, major);
     }
     
 }//end class

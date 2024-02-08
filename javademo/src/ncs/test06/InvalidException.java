@@ -1,5 +1,5 @@
 package ncs.test06;
 
-public class InvalidException extends Calculator{
+public class InvalidException extends Exception{
 
 }

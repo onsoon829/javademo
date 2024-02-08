@@ -17,7 +17,7 @@ public class Book {
 		this.discount = discount;
 		
 	}
-	
+//getter, setter 사용	
 	public String toString() {
 		return title + "  " +author + "  " + price + "  " + publisher + "  " + discountRate + "% 할인\n" + "할인된 가격:" + price/10*9 + "원";
 	}

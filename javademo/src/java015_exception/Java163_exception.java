@@ -39,6 +39,6 @@ public class Java163_exception {
     	 }	
     }
     	
-    	return num;
+  	return num;
     }//end inputData()
 }//end class

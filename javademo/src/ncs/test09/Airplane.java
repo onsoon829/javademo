@@ -30,6 +30,7 @@ public class Airplane extends PlaneTest{
 	public  void setfuelSize(int fuelSize) {
 		this.fuelSize = fuelSize;
 	}
+	//상속받은 입장에선 super 굳이 사용 안해도 된다
 	
 	public int getDistance() {
 		return Distance;

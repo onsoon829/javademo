@@ -16,7 +16,7 @@ public class test02 {
 		data[4] = 9.34;
 		
 		sum =(data[0]+data[1]+data[2]+data[3]+data[4]);
-		avg = (data[0]+data[1]+data[2]+data[3]+data[4])/5;
+		avg = sum/5;
 		System.out.printf("합계: %.3f\n", sum);
 		System.out.println("평균: " + avg);
 				

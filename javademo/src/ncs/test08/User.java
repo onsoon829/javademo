@@ -20,7 +20,7 @@ public class User extends UserTest {
 		this.age = age;
 		this.gender = gender;
 		this.phone = phone;
-	}
+	}//생성자 생성
 	
 	public String getid() {
 		return id;
@@ -73,7 +73,9 @@ public class User extends UserTest {
 	@Override
     public String toString() {
     	 return String.format("%s %s %c %d %s %s", getid(), getpassword(), getname(), getage(), getgender(), getphone());
+    	 //
     }
+	
 
 }
 

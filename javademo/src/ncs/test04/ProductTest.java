@@ -10,7 +10,7 @@ public class ProductTest {
 		m1.display();
 		
 		int total = m1.count();
-
+//Scanner 사용
 	}//end main
 
 }//end class
