@@ -1,5 +1,5 @@
 package java019_inner.part04;
 
-public class InnerAnonymous {
-
+public abstract class InnerAnonymous {
+	public abstract void prn();
 }

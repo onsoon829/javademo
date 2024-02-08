@@ -6,7 +6,7 @@ public class LifeCycle extends Thread{
 	}
 	@Override
 	public void run() {
-		System.out.printf("%s %s %d\n", getName(), getState(), isAlive());
+		System.out.printf("%s %s %b\n", getName(), getState(), isAlive());
 	}
 
 }

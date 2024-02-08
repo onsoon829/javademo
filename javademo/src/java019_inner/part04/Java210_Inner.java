@@ -9,16 +9,14 @@ public class Java210_Inner {
 		Test s = new Test();
 		s.prn();
 		
-		InnerAnonymous iu = new InnerAnonymous() {//
+		InnerAnonymous iu = new InnerAnonymous() {
 			
 			@Override
 			public void prn() {
-				System.out.println("call test");
+				System.out.println("call test");				
 			}
-			
 		};
 		iu.prn();
-
-	}//end main
-
+		
+	}//end main()
 }//end class
