@@ -1,4 +1,5 @@
 package java021_jdbc.part03;
+import java.util.HashMap;
 // 내용 삽입하는 방법
 import java.util.List;
 import java.util.Scanner;
@@ -18,9 +19,9 @@ public class Java218_Jdbc {
 				insertCall(memController, sc);
 				//listCall(memController); 확인용
 			}else if(input==3) {
-				
+				updateCall(memController, sc);
 			}else if(input==4) {
-				
+				deleteCall(memController, sc);
 			}else if(input==5) {
 				System.out.println("시스템 종료");
 				sc.close();
@@ -29,6 +30,39 @@ public class Java218_Jdbc {
 		}
 
 	}//end main
+	
+	public static void deleteCall(MemController MemController, Scanner sc) {
+		System.out.printf("번호: ");
+	    int num = Integer.parseInt(sc.nextLine());
+	    
+	    int chk = MemController.deleteProcess(num);
+	    System.out.printf("%d개 삭제\n", chk);
+	}//end deleteCall
+	
+	public static void updateCall(MemController MemController, Scanner sc) {
+		System.out.printf("번호: ");
+	    int num = Integer.parseInt(sc.nextLine());
+	    
+
+	    System.out.printf("이름: ");
+		String name = sc.nextLine();
+		
+		System.out.printf("나이: ");
+		int age = Integer.parseInt(sc.nextLine());
+		
+		System.out.printf("지역: ");
+		String loc = sc.nextLine();
+		
+		HashMap<String, Object>map = new HashMap<String, Object>();
+		map.put("num", num);
+		map.put("name", name);
+		map.put("age", age);
+		map.put("loc", loc);
+		
+		int chk = MemController.updateProcess(map);
+		System.out.printf("%d개 수정\n", chk);
+		
+	}
 	
 	public static void insertCall(MemController MemController, Scanner sc) {
 		System.out.printf("이름: ");
@@ -39,6 +73,7 @@ public class Java218_Jdbc {
 		
 		System.out.printf("지역: ");
 		String loc = sc.nextLine();
+		
 		
 		int chk = MemController.insertProcess(new MemDTO(name, age, loc));
 		System.out.printf("%d개 삽입\n", chk);

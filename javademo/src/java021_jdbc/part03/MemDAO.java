@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class MemDAO {
@@ -18,9 +19,49 @@ public class MemDAO {
 		return dao;
 	}
 	
-	public int insertMethod(Connection conn, MemDTO dto) {
+	public int deleteMethod(Connection conn, int num) {
 		int chk = 0;
 		PreparedStatement pstmt = null;
+		
+		try {
+			String sql = "DELETE FROM mem WHERE num =?";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1,  num);;
+			chk = pstmt.executeUpdate();
+			
+		} catch (SQLException e) {
+		
+			e.printStackTrace();
+		}finally {
+			JdbcTemplate.close(pstmt);
+		}
+		
+		return chk;
+	}//end deleteMethod
+	public int updateMethod(Connection conn,HashMap<String, Object>map) {
+		int chk = 0;
+		PreparedStatement pstmt = null;	
+        
+		try {
+			String sql = "UPDATE mem SET name=?, age=?, loc=? WHERE num=?";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1,  map.get("name").toString());
+			pstmt.setInt(2, Integer.parseInt(map.get("age").toString()));
+			pstmt.setString(3,  map.get("loc").toString());
+			pstmt.setInt(4, Integer.parseInt(map.get("num").toString()));
+			chk = pstmt.executeUpdate();
+			}catch (SQLException e) {
+				e.printStackTrace();
+			}finally {
+				JdbcTemplate.close(pstmt);
+			}
+		return chk;
+		}// end updatemethod
+	
+	
+	public int insertMethod(Connection conn, MemDTO dto) {
+		int chk = 0;
+		PreparedStatement pstmt = null;		
 		
 		
 		try {
@@ -33,6 +74,8 @@ public class MemDAO {
 		} catch (SQLException e) {
 			
 			e.printStackTrace();
+		}finally {
+			JdbcTemplate.close(pstmt);
 		}
 		return chk;
 	}//end insertMethod()
