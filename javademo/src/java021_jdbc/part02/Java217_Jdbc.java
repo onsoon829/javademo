@@ -1,4 +1,4 @@
-package java021_jdbc.part02;
+ package java021_jdbc.part02;
 
 import java.util.List;
 import java.util.Scanner;
